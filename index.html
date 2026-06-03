@@ -40,8 +40,175 @@
             margin: 0 15px;
         }
 
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(0, 46, 83);
+            font-size: 1.02rem;
+        }
+
+
         .left {
             font-size: 2rem;
+        }
+
+        .firstsec {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 35px 0px;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+            margin: 45px 0px;
+        }
+
+        .firstsec div {
+            width: 30%;
+        }
+
+        .blue {
+            color: rgb(76, 172, 251);
+        }
+
+        .green {
+            color: lightgreen;
+        }
+
+        .yellow {
+            color: rgb(239, 239, 163);
+        }
+
+        .pink {
+            color: pink;
+        }
+
+        .secondsec h1 {
+            font-size: 1.8rem;
+            ;
+        }
+
+        .text-gray {
+            color: gray
+        }
+
+        .purple {
+            color: rgb(247, 112, 247);
+        }
+
+        .secondsec {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        main hr {
+            border: 0;
+            height: 1.2px;
+            background-color: rgb(154, 154, 249);
+            margin: 40px 80px;
+        }
+
+        .secondsec .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0px;
+            display: flex;
+        }
+
+        .secondsec .boxin {
+            background: white;
+            height: 50px;
+            width: 2px;
+            margin: 0px 120px;
+        }
+
+        .verti-text {
+            position: relative;
+            font-size: 1rem;
+            top: 0px;
+
+        }
+
+        .gurum {
+            position: relative;
+            top: -50px;
+            width: 50px;
+            ;
+            height: 50px;
+            left: -23.5px
+        }
+
+        .des {
+            position: relative;
+            top: 15px;
+            width: 95px;
+            font-size: 0.7rem;
+            color: rgb(140, 138, 138);
+        }
+
+        .aaa {
+            position: relative;
+            width: 120px;
+            font-size: 0.85rem;
+        }
+
+        .foooooot {
+            background-color: rgb(6, 17, 41);
+            height: 200px;
+            padding: 40px 80px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .foooooot ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .foooooot ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .foooooot ul li a:hover {
+            color: rgb(0, 120, 199);
+        }
+
+        .te {
+            background-color: rgb(6, 17, 41);
+            color: gray;
+            text-align: center;
+        }
+
+        .leftSection .btn2 {
+            position: relative;
+            top: -72px;
+            left: 170px;
+            padding:  5px 12px;
+            background-color: #190d53;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .leftSection .btn {
+            padding:  5px 12px;
+            background-color: #190d53;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 15px;
+            width: 160px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -52,25 +219,100 @@
             <div class="left">Sole's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Email</li>
-                    <li>Contact Me</li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Email</a></li>
+                    <li><a href="/">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <section class="1st">
+        <section class="firstsec">
             <div class="leftSection">
-                left
+                Hello, I'm <span class="blue">Sole</span>. I'm a
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn2">Visit Github</button>
+                </div>
             </div>
             <div class="rightSection">
-                right
+                <img src="images.io/opp.png" width="500px" height="500px">
             </div>
         </section>
+        <hr>
+        <section class="secondsec">
+            <span class="text-gray">Things i have done</span>
+            <h1>Experience</h1>
+
+            <div class="box">
+                <div class="boxin">
+                    <img class="gurum" src="images.io/Html.png" alt="HTML Logo">
+                    <div class="verti-text">HTML</div>
+                    <div class="aaa">(2000-2002)</div>
+                    <div class="des">Developed responsive websites using HTML and CSS</div>
+                </div>
+                <div class="boxin">
+                    <img class="gurum" src="images.io/CSS.png" alt="CSS Logo">
+                    <div class="verti-text">CSS</div>
+                    <div class="aaa">(2002-2004)</div>
+                    <div class="des">Created visually appealing designs with CSS</div>
+                </div>
+                <div class="boxin">
+                    <img class="gurum" src="images.io/JavaScript.png" alt="JavaScript Logo">
+                    <div class="verti-text">JavaScript</div>
+                    <div class="aaa">(2004-2006)</div>
+                    <div class="des">Built interactive web applications with JavaScript</div>
+                </div>
+                <div class="boxin">
+                    <img class="gurum" src="images.io/SQL.png" alt="SQL Logo">
+                    <div class="verti-text">SQL</div>
+                    <div class="aaa">(2006-2008)</div>
+                    <div class="des">Designed and maintained database systems</div>
+                </div>
+                <div class="boxin">
+                    <img class="gurum" src="images.io/PyTorch.png" alt="PyTorch Logo">
+                    <div class="verti-text">PyTorch</div>
+                    <div class="aaa">(2008-2010)</div>
+                    <div class="des">Developed machine learning models with PyTorch</div>
+                </div>
+            </div>
+
+        </section>
     </main>
+
+    <footer>
+        <div class="foooooot">
+            <div class="foot-first">
+                Sole's Developer Portfolio
+            </div>
+            <div class="foot-second">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Email</a></li>
+                    <li><a href="/">Contact Me</a></li>
+            </div>
+            <div class="foot-third"></div>
+            <div class="foot-fourth"></div>
+        </div>
+        <div class="te">© 2023 Sole's Developer Portfolio. All rights reserved.</div>
+    </footer>
+
+    <!--For the typing animation-->
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: [' <span class="purple">Developer</span>', '<span class="green">Luchi</span> Lover', ' <span class="yellow">Gamer</span>', ' <span class="pink">Tech Enthusiast</span>'],
+            typeSpeed: 30,
+            backSpeed: 30,
+            loop: true
+        });
+    </script>
+
 </body>
 
 </html>
